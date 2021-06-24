@@ -6,3 +6,6 @@ import os
 import pathlib
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+DATA_DIR = pathlib.Path(BASE_DIR).joinpath("data")
+DATA_DIR.mkdir(exist_ok=True)
