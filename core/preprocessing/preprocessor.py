@@ -34,11 +34,11 @@ class SamplePreProcessor(Preprocessor):
         for s in seq:
             if len(s.splitlines()) > 1:
                 for i in s.splitlines():
-                    if i not in self._stop_word:
-                        yield i
+                    if i.lower() not in self._stop_word:
+                        yield i.lower()
             else:
-                if s not in self._stop_word:
-                    yield s
+                if s.lower() not in self._stop_word:
+                    yield s.lower()
 
     def _strip(self, token: str) -> str:
         return token.strip(self._strip_char).lower()
