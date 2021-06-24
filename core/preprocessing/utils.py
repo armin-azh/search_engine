@@ -1,5 +1,7 @@
+from typing import List, Tuple
 
-def intersect(list1: list, list2: list) -> list:
+
+def intersect(list1: List[str], list2: List[str]) -> List[str]:
     """
     intersect two list
     :param list1:
@@ -21,7 +23,7 @@ def intersect(list1: list, list2: list) -> list:
     return inter
 
 
-def union(list1: list, list2: list) -> list:
+def union(list1: List[str], list2: List[str]) -> List[str]:
     """
     union 2 list
     :param list1:
@@ -35,7 +37,7 @@ def union(list1: list, list2: list) -> list:
     return sorted(list(_c))
 
 
-def tokenizer(seq: str, strip_char: str, stop_word: list) -> list:
+def tokenizer(seq: str, strip_char: str, stop_word: List[str]) -> List[str]:
     """
     tokenize word base on the stop word and strip char
     :param seq:
