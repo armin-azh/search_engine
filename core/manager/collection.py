@@ -1,5 +1,4 @@
 from pathlib import Path
-import pathlib
 from settings import COLLECTION_DIR
 
 
