@@ -16,3 +16,6 @@ DATA_DIR.mkdir(exist_ok=True)
 
 STORAGE_DIR = DATA_DIR.joinpath('storage')
 STORAGE_DIR.mkdir(exist_ok=True)
+
+COLLECTION_DIR = DATA_DIR.joinpath('collection')
+COLLECTION_DIR.mkdir(exist_ok=True)
