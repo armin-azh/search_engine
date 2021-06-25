@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Posting:
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -32,9 +33,6 @@ class SamplePosting(Posting):
     def sort(self):
         self._ls.sort()
 
-    def posting_list(self)->List[str]:
+    def posting_list(self) -> List[str]:
         self.sort()
         return self._ls
-
-
-
