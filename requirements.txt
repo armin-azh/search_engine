@@ -1,1 +1,3 @@
-nltk
+requests==2.24.0
+tqdm==4.47.0
+beautifulsoup4==4.9.3
