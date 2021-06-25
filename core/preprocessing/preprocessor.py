@@ -1,5 +1,5 @@
 from typing import List
-from stop_word import EN_STOP_WORDS
+from .stop_word import EN_STOP_WORDS
 import nltk
 
 
